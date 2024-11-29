@@ -13,10 +13,23 @@ body {
     padding: 20px;
     gap: 20px;
 }
-
+.urunler{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+}
 .product-image{
     height: 30%;
     width: 50%;
+}
+.stars{
+    color: rgb(255, 221, 0);
+    font-size: 12px;
 }
 .price{
     margin-bottom: 0px;
@@ -25,26 +38,15 @@ body {
     margin-top: 20px;
     color: red;
 }
-.price2{
-    font-weight:bold;
-    font-size: 40px;
-    color: red;
-    margin: 0;
-}
-.icerik{
-    max-height: 150px;
-    margin-top: 30px;
-    overflow-y: auto;
-}
-.modal-right h4{
-    text-overflow: ellipsis;
-    white-space: nowrap;       
-    overflow: hidden;
-}
 .buton{
     padding: 15px 50px;
     border-radius: 50px;
     margin-top: 15px;
+    margin-bottom: 10px;
+    
+}
+.modal-right button{
+    margin-right: 20px;
 }
 #modal{
     background-color: rgba(0, 0, 0, 0.5);
@@ -70,11 +72,6 @@ body {
     display: flex;
     width: 50%;
 }
-.stars{
-    color: rgb(255, 221, 0);
-    font-size: 12px;
-    
-}
 .modal-image-div img{
     justify-content: center;
     align-items: center;
@@ -82,21 +79,39 @@ body {
     padding: 70px;
     width: 150px;
 }
+.modal-right{
+    width: 50%;
+    
+}
 #exit:hover{
     cursor: pointer;
     color: red;
 }
-.modal-right{
-    width: 50%;
+.modal-right h4{
+    text-overflow: ellipsis;
+    white-space: nowrap;       
+    overflow: hidden;
 }
-.urunler{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-    
-    width: 200px;
-    cursor: pointer;
+.icerik{
+    max-height: 150px;
+    margin-top: 30px;
+    overflow-y: auto;
 }
+.price2{
+    margin-right: 20px;
+    font-weight:bold;
+    font-size: 40px;
+    color: red;
+    margin: 0;
+   
+}
+
+
+
+
+
+
+
+
+
+

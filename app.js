@@ -11,7 +11,6 @@ async function fetchProducts() {
     } catch (error) {
         console.error("Veriler çekilirken bir hata oluştu:", error);
     }
-    
 }
 
 function urunler(products) {
@@ -37,7 +36,6 @@ function renderStars(rating) {
     const fullStars = Math.floor(rating); 
     const halfStar = rating % 1 >= 0.5 ? 1 : 0; 
     const emptyStars = 5 - fullStars - halfStar; 
-    
     return '<i class="fa-solid fa-star"></i>'.repeat(fullStars) +
            (halfStar ? '<i class="fa-regular fa-star-half-stroke"></i>' : '') +
            '<i class="fa-regular fa-star"></i>'.repeat(emptyStars);
@@ -45,7 +43,6 @@ function renderStars(rating) {
 
 function openModal(product) {
     modaldiv.innerHTML = ''; 
-    
     const stars = renderStars(product.rating.rate); 
     const modalContent = document.createElement('div');
     modalContent.className="modal-ic"
@@ -54,25 +51,33 @@ function openModal(product) {
             <img src="${product.image}" alt="${product.title}" class="modal-image">
         </div>
         <div class="modal-right">
-        <i onclick="cikis()" id="exit"  style="float:right" class="fa-regular fa-circle-xmark"></i>
+            <i onclick="cikis()"
+                id="exit" 
+                style="float:right" 
+                class="fa-regular fa-circle-xmark">
+            </i>
             <h4>${product.title}</h4>
-             <div class="stars">${stars} (${product.rating.count})</div>
-            <p class="icerik">${product.description}</p>
-            <p class="price2" style="float:right;">${product.price} $</p>
+            <div
+                class="stars">${stars} (${product.rating.count})   
+            </div>
+            <p
+                class="icerik">${product.description}
+            </p>
+            <p 
+                class="price2" style="float:right;">${product.price} $
+            </p>
             <br><br><br>
-            <button class="buton" style="float:right">Sepete Ekle</button>
+            <button
+                class="buton" style="float:right">Sepete Ekle
+            </button>
         </div>
     `;
-    
     modaldiv.appendChild(modalContent);
     modaldiv.style.display = "flex";
-    
     console.log("Ürün bilgisi:", product);
 }
 
 window.addEventListener('load', fetchProducts);
-
 function cikis(){
     modaldiv.style.display = "none";
-
 }
