@@ -64,9 +64,9 @@ function openModal(product) {
                 class="icerik">${product.description}
             </p>
             <p 
-                class="price2" style="float:right;">${product.price} $
+                class="price2" ">${product.price} $
             </p>
-            <br><br><br>
+            <br>
             <button
                 class="buton" style="float:right">Sepete Ekle
             </button>

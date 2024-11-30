@@ -33,9 +33,9 @@ body {
 }
 .price{
     margin-bottom: 0px;
+    margin-top: 20px;
     font-weight:bold;
     font-size: 30px;
-    margin-top: 20px;
     color: red;
 }
 .buton{
@@ -47,6 +47,7 @@ body {
 }
 .modal-right button{
     margin-right: 20px;
+
 }
 #modal{
     background-color: rgba(0, 0, 0, 0.5);
@@ -93,9 +94,11 @@ body {
     overflow: hidden;
 }
 .icerik{
+    margin-right: 10px;
     max-height: 150px;
     margin-top: 30px;
     overflow-y: auto;
+    
 }
 .price2{
     margin-right: 20px;
@@ -103,6 +106,7 @@ body {
     font-size: 40px;
     color: red;
     margin: 0;
+    margin-left: 200px;
    
 }
 
